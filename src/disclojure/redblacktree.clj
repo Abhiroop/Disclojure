@@ -1,36 +1,6 @@
 (ns disclojure.redblacktree
   (:use [clojure.core.match :only (match)]))
 
-(defn rb-balance [tree]
-  (match [tree]
-         [(:or {:left {:color :red
-                       :left {:color :red :left a :value x :right b}
-                       :value y :right c}
-                :value z :right d}
-
-               {:left {:color :red                    
-                       :left  a :value x
-                       :right {:color :red :value y :left b :right c}}
-                :value z :right d}
-
-               {:left a :value x
-                :right {:color :red
-                        :left {:color :red
-                               :left b :value y :right c}
-                        :value z :right d}}
-
-               {:left a :value x
-                :right {:color :red
-                        :left b :value y
-                        :right {:color :red
-                                :left c :value z :right d}}})]
-         (rb-mk-tree :red
-                     (rb-mk-tree :black a x b)
-                     y
-                     (rb-mk-tree :black c z d))
-
-         :else tree))
-
 (defn balance [tree]
   (match [tree]
          [(:or [:black [:red [:red a x b] y c] z d]
