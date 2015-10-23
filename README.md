@@ -8,6 +8,6 @@ It essentially aims to be a drop in replacement for Redis by being more efficien
 Contribute and enjoy!
 
 
-[1] http://www.amazon.com/Purely-Functional-Structures-Chris-Okasaki/dp/0521663504
+[1] https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf
 
 [2] http://cstheory.stackexchange.com/questions/1539/whats-new-in-purely-functional-data-structures-since-okasaki
