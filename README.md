@@ -1,5 +1,5 @@
 # Disclojure
-A library I am starting to implement all classic data structures as listed in CLRS[1] and Okasaki[2] for Clojure.
+A library I am starting to implement all classic data structures and especially the ones which are not mentioned in the classic Okasaki[1][2] in Clojure.
 
 This is an attempt to build a data structures server written entirely on top of the JVM. The library intends to be predominantly in Clojure and use its inherent STM model to ensure thread safety, but wherever necessary I intend to use any other JVM language like Java, Scala, Groovy etc.
 
@@ -8,7 +8,6 @@ It essentially aims to be a drop in replacement for Redis by being more efficien
 Contribute and enjoy!
 
 
-[1] http://www.amazon.com/Introduction-Algorithms-Edition-Thomas-Cormen/dp/0262033844
+[1] https://www.cs.cmu.edu/~rwh/theses/okasaki.pdf
 
-
-[2] http://www.amazon.com/Purely-Functional-Structures-Chris-Okasaki/dp/0521663504
+[2] http://cstheory.stackexchange.com/questions/1539/whats-new-in-purely-functional-data-structures-since-okasaki
